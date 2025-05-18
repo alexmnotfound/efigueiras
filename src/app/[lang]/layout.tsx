@@ -24,6 +24,9 @@ export default async function RootLayout({
 
   return (
     <html lang={safeLang}>
+      <head>
+        <link rel="icon" href="/favicon.ico" />
+      </head>
       <body className={`${inter.variable} font-sans`}>
         <nav className="fixed top-0 w-full bg-white shadow-md z-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -31,7 +34,7 @@ export default async function RootLayout({
               <div className="flex items-center w-full">
                 <div className="flex-shrink-0 flex items-center">
                   <Link href={`/${safeLang}`} className="flex items-center">
-                    <Image src="/image.png" alt="Estefanía Figueiras Logo" height={40} width={160} className="h-10 w-auto" priority />
+                    <Image src="/logo.png" alt="Estefanía Figueiras Logo" height={40} width={160} className="h-10 w-auto" priority />
                   </Link>
                 </div>
                 <div className="flex-1 flex justify-center">
