@@ -4,6 +4,7 @@ import '../globals.css'
 import Link from 'next/link'
 import LanguageSelector from '@/components/LanguageSelector'
 import Image from 'next/image'
+import MobileNav from '@/components/MobileNav'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 
@@ -54,7 +55,10 @@ export default async function RootLayout({
                   </div>
                 </div>
                 <div className="flex-shrink-0 flex items-center">
-                  <LanguageSelector lang={safeLang} />
+                  <span className="hidden sm:flex">
+                    <LanguageSelector lang={safeLang} />
+                  </span>
+                  <MobileNav lang={safeLang} />
                 </div>
               </div>
             </div>
