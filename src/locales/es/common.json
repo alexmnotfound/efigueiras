@@ -1,0 +1,62 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre Mí",
+    "coaching": "Sobre Coaching",
+    "proposal": "Mi Propuesta",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "title": "Camila Palacios",
+    "subtitle": "Transformando vidas a través del coaching ontológico",
+    "cta": "Conoce más"
+  },
+  "about": {
+    "title": "Sobre Mí",
+    "description1": "Soy Camila Palacios, Coach Ontológica certificada con más de 5 años de experiencia ayudando a personas a alcanzar su máximo potencial.",
+    "description2": "Mi enfoque se centra en facilitar procesos de transformación personal y profesional, guiando a mis clientes hacia una vida más plena y significativa."
+  },
+  "coaching": {
+    "title": "Sobre Coaching",
+    "what": {
+      "title": "¿Qué es el Coaching Ontológico?",
+      "description": "Es un proceso de aprendizaje transformacional que te permite observar y modificar tu forma de ser y estar en el mundo."
+    },
+    "who": {
+      "title": "¿Para quién es?",
+      "description": "Para cualquier persona que busque crecimiento personal, desarrollo profesional o mejorar sus relaciones."
+    },
+    "benefits": {
+      "title": "Beneficios",
+      "description": "Mayor autoconocimiento, mejor comunicación, desarrollo de liderazgo y transformación personal."
+    }
+  },
+  "proposal": {
+    "title": "Mi Propuesta",
+    "sessions": {
+      "title": "Sesiones Individuales",
+      "description": "Sesiones personalizadas de 60 minutos, disponibles tanto online como presenciales, adaptadas a tus necesidades específicas."
+    },
+    "programs": {
+      "title": "Programas Especializados",
+      "description": "Programas estructurados para desarrollo de liderazgo, gestión emocional y transformación personal."
+    },
+    "differentiators": {
+      "title": "¿Qué me diferencia?",
+      "items": [
+        "Enfoque holístico que integra mente, cuerpo y emoción",
+        "Metodología práctica y resultados tangibles",
+        "Acompañamiento cercano y comprometido"
+      ]
+    }
+  },
+  "contact": {
+    "title": "Contacto",
+    "form": {
+      "name": "Nombre",
+      "email": "Email",
+      "message": "Mensaje",
+      "submit": "Enviar Mensaje"
+    }
+  }
+} 

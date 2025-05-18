@@ -1,0 +1,62 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Me",
+    "coaching": "About Coaching",
+    "proposal": "My Proposal",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Camila Palacios",
+    "subtitle": "Transforming lives through ontological coaching",
+    "cta": "Learn More"
+  },
+  "about": {
+    "title": "About Me",
+    "description1": "I am Camila Palacios, a certified Ontological Coach with over 5 years of experience helping people reach their full potential.",
+    "description2": "My approach focuses on facilitating personal and professional transformation processes, guiding my clients towards a more fulfilling and meaningful life."
+  },
+  "coaching": {
+    "title": "About Coaching",
+    "what": {
+      "title": "What is Ontological Coaching?",
+      "description": "It is a transformational learning process that allows you to observe and modify your way of being and being in the world."
+    },
+    "who": {
+      "title": "Who is it for?",
+      "description": "For anyone seeking personal growth, professional development, or improving their relationships."
+    },
+    "benefits": {
+      "title": "Benefits",
+      "description": "Greater self-awareness, better communication, leadership development, and personal transformation."
+    }
+  },
+  "proposal": {
+    "title": "My Proposal",
+    "sessions": {
+      "title": "Individual Sessions",
+      "description": "60-minute personalized sessions, available both online and in-person, tailored to your specific needs."
+    },
+    "programs": {
+      "title": "Specialized Programs",
+      "description": "Structured programs for leadership development, emotional management, and personal transformation."
+    },
+    "differentiators": {
+      "title": "What makes me different?",
+      "items": [
+        "Holistic approach integrating mind, body, and emotion",
+        "Practical methodology and tangible results",
+        "Close and committed support"
+      ]
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "submit": "Send Message"
+    }
+  }
+} 
