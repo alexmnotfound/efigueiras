@@ -14,7 +14,7 @@ export default async function Home({
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl sm:text-5xl font-bold mb-6">
-              {lang === 'es' ? 'Camila Palacios' : 'Camila Palacios'}
+              {lang === 'es' ? 'Estefanía Figueiras' : 'Estefanía Figueiras'}
             </h1>
             <h2 className="text-2xl sm:text-3xl mb-8">
               {lang === 'es' ? 'Coach Ontológica' : 'Ontological Coach'}

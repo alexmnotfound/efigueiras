@@ -5,7 +5,7 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 
 export const metadata: Metadata = {
-  title: 'Camila Palacios - Coach Ontológica',
+  title: 'Estefanía Figueiras - Coach Ontológica',
   description: 'Coach Ontológica profesional ayudando a personas a alcanzar su máximo potencial',
 }
 

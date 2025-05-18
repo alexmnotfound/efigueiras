@@ -1,6 +1,6 @@
-# Camila Palacios - Coach Ontológica Website
+# Estefanía Figueiras - Coach Ontológica Website
 
-A professional website for Camila Palacios, an Ontological Coach, featuring a modern design and bilingual support (Spanish/English).
+A professional website for Estefanía Figueiras, an Ontological Coach, featuring a modern design and bilingual support (Spanish/English).
 
 ## Features
 
