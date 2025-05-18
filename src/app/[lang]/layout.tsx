@@ -19,38 +19,39 @@ export default async function RootLayout({
   children: React.ReactNode
   params: { lang: string }
 }) {
-  const { lang } = await params
+  const { lang } = await params;
+  const safeLang = ['es', 'en'].includes(lang) ? lang : 'es';
 
   return (
-    <html lang={lang}>
+    <html lang={safeLang}>
       <body className={`${inter.variable} font-sans`}>
         <nav className="fixed top-0 w-full bg-white shadow-md z-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between h-16">
               <div className="flex items-center w-full">
                 <div className="flex-shrink-0 flex items-center">
-                  <Link href={`/${lang}`} className="flex items-center">
+                  <Link href={`/${safeLang}`} className="flex items-center">
                     <Image src="/image.png" alt="Estefanía Figueiras Logo" height={40} width={160} className="h-10 w-auto" priority />
                   </Link>
                 </div>
                 <div className="flex-1 flex justify-center">
                   <div className="hidden sm:flex sm:space-x-8">
-                    <Link href={`/${lang}#about`} className="text-gray-900 hover:text-primary px-3 py-2 rounded-md text-sm font-medium">
-                      {lang === 'es' ? 'Sobre Mí' : 'About Me'}
+                    <Link href={`/${safeLang}#about`} className="text-gray-900 hover:text-primary px-3 py-2 rounded-md text-sm font-medium">
+                      {safeLang === 'es' ? 'Sobre Mí' : 'About Me'}
                     </Link>
-                    <Link href={`/${lang}#coaching`} className="text-gray-900 hover:text-primary px-3 py-2 rounded-md text-sm font-medium">
-                      {lang === 'es' ? 'Sobre Coaching' : 'About Coaching'}
+                    <Link href={`/${safeLang}#coaching`} className="text-gray-900 hover:text-primary px-3 py-2 rounded-md text-sm font-medium">
+                      {safeLang === 'es' ? 'Sobre Coaching' : 'About Coaching'}
                     </Link>
-                    <Link href={`/${lang}#proposal`} className="text-gray-900 hover:text-primary px-3 py-2 rounded-md text-sm font-medium">
-                      {lang === 'es' ? 'Mi Propuesta' : 'My Proposal'}
+                    <Link href={`/${safeLang}#proposal`} className="text-gray-900 hover:text-primary px-3 py-2 rounded-md text-sm font-medium">
+                      {safeLang === 'es' ? 'Mi Propuesta' : 'My Proposal'}
                     </Link>
-                    <Link href={`/${lang}#contact`} className="text-gray-900 hover:text-primary px-3 py-2 rounded-md text-sm font-medium">
-                      {lang === 'es' ? 'Contacto' : 'Contact'}
+                    <Link href={`/${safeLang}#contact`} className="text-gray-900 hover:text-primary px-3 py-2 rounded-md text-sm font-medium">
+                      {safeLang === 'es' ? 'Contacto' : 'Contact'}
                     </Link>
                   </div>
                 </div>
                 <div className="flex-shrink-0 flex items-center">
-                  <LanguageSelector lang={lang} />
+                  <LanguageSelector lang={safeLang} />
                 </div>
               </div>
             </div>

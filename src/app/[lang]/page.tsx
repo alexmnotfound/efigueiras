@@ -1,11 +1,12 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default async function Home({
   params,
 }: {
   params: { lang: string }
 }) {
-  const { lang } = await params
+  const { lang } = await params;
 
   return (
     <div className="min-h-screen">
@@ -21,8 +22,8 @@ export default async function Home({
             </h2>
             <p className="text-xl mb-8 max-w-2xl mx-auto">
               {lang === 'es' 
-                ? 'Ayudando a personas a alcanzar su máximo potencial a través del coaching ontológico'
-                : 'Helping people reach their full potential through ontological coaching'}
+                ? 'Acompaño a personas a definir y alcanzar sus objetivos personales y profesionales'
+                : 'I accompany people to define and reach their personal and professional objectives'}
             </p>
             <Link 
               href={`/${lang}#contact`}
@@ -44,25 +45,43 @@ export default async function Home({
             <div>
               <p className="text-lg mb-4">
                 {lang === 'es'
-                  ? 'Soy una Coach Ontológica certificada con más de 5 años de experiencia ayudando a personas a transformar sus vidas.'
-                  : 'I am a certified Ontological Coach with over 5 years of experience helping people transform their lives.'}
+                  ? 'Soy Licenciada en Marketing, Coach Ontológico (avalada por la International Coaching Federation) y tengo un Master en Coaching Deportivo y Organizacional (Unisports - España).'
+                  : 'I am a licensed Marketing graduate, Ontological Coach (certified by the International Coaching Federation) and have a Master in Sports and Organizational Coaching (Unisports - Spain).'}
               </p>
-              <p className="text-lg">
+              <p className="text-lg mb-4">
                 {lang === 'es'
-                  ? 'Mi enfoque se centra en el desarrollo personal y profesional, utilizando herramientas del coaching ontológico para generar cambios profundos y sostenibles.'
-                  : 'My approach focuses on personal and professional development, using ontological coaching tools to generate deep and sustainable changes.'}
+                  ? 'Trabajé en empresas multinacionales, en startups y también freelancee proyectos. '
+                  : 'I worked in multinational companies, startups and also freelance projects.'}
+              </p>
+              <p className="text-lg mb-4">
+                {lang === 'es'
+                  ? 'Me define y atraviesa el deporte, jugué de manera amateur y profesional al hockey. Actualmente soy intento de crossfitter.'
+                  : 'It defines and permeates my life, I played hockey as an amateur and professional. Currently I am an attempt of crossfitter.'}
+              </p>
+              <p className="text-lg mb-4">
+                {lang === 'es'
+                  ? 'Me apasiona viajar, conocer nuevos lugares, vivir nuevas experiencias, comer cosas ricas y mi perra Mabel.'
+                  : 'I am passionate about traveling, discovering new places, living new experiences, eating good food and my dog Mabel.'}
+              </p>
+              <p className="text-lg mb-4">
+                {lang === 'es'
+                  ? 'Mi propósito es generar un impacto positivo en las personas que acompaño. Ayudar a hacer, a mejorar, potenciar, transformar, alivianar, alegrar, a ser.'
+                  : 'My purpose is to generate a positive impact on the people I accompany. Helping to do, to improve, to enhance, to transform, to alleviate, to cheer, to be.'}
               </p>
             </div>
-            <div className="bg-gray-100 p-8 rounded-lg">
-              <h3 className="text-xl font-semibold mb-4">
-                {lang === 'es' ? 'Mi Experiencia' : 'My Experience'}
-              </h3>
-              <ul className="space-y-2">
-                <li>• {lang === 'es' ? 'Coach Ontológica Certificada' : 'Certified Ontological Coach'}</li>
-                <li>• {lang === 'es' ? '5+ años de experiencia' : '5+ years of experience'}</li>
-                <li>• {lang === 'es' ? 'Especializada en desarrollo personal' : 'Specialized in personal development'}</li>
-                <li>• {lang === 'es' ? 'Sesiones individuales y grupales' : 'Individual and group sessions'}</li>
-              </ul>
+            <div>
+              <Image src="/tefi_green.png" alt="Estefanía Figueiras" width={300} height={300} className="mb-6 rounded-lg object-cover mx-auto" />
+              <div className="bg-gray-100 p-8 rounded-lg mt-6">
+                <h3 className="text-xl font-semibold mb-4">
+                  {lang === 'es' ? 'Mi Experiencia' : 'My Experience'}
+                </h3>
+                <ul className="space-y-2">
+                  <li>• {lang === 'es' ? 'Coach Ontológica Certificada' : 'Certified Ontological Coach'}</li>
+                  <li>• {lang === 'es' ? '5+ años de experiencia' : '5+ years of experience'}</li>
+                  <li>• {lang === 'es' ? 'Especializada en desarrollo personal' : 'Specialized in personal development'}</li>
+                  <li>• {lang === 'es' ? 'Sesiones individuales y grupales' : 'Individual and group sessions'}</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -90,9 +109,9 @@ export default async function Home({
                 {lang === 'es' ? 'Beneficios' : 'Benefits'}
               </h3>
               <ul className="space-y-2">
-                <li>• {lang === 'es' ? 'Mayor autoconocimiento' : 'Greater self-knowledge'}</li>
-                <li>• {lang === 'es' ? 'Mejora en las relaciones' : 'Improved relationships'}</li>
-                <li>• {lang === 'es' ? 'Desarrollo de liderazgo' : 'Leadership development'}</li>
+                <li>• {lang === 'es' ? 'Tiene un inicio y un fin (cuando se cumple el objetivo).' : 'Has a beginning and an end (when the goal is achieved).'}</li>
+                <li>• {lang === 'es' ? 'Está enfocado en generar acción.' : 'It is focused on generating action.'}</li>
+                <li>• {lang === 'es' ? 'Diseñamos futuro, no hacemos arqueología del pasado.' : 'We design the future, not archaeology of the past.'}</li>
                 <li>• {lang === 'es' ? 'Crecimiento personal' : 'Personal growth'}</li>
               </ul>
             </div>
@@ -126,19 +145,16 @@ export default async function Home({
                   {lang === 'es' ? 'Sesiones Individuales' : 'Individual Sessions'}
                 </h4>
                 <ul className="space-y-2">
-                  <li>• {lang === 'es' ? 'Sesiones de 1 hora' : '1-hour sessions'}</li>
-                  <li>• {lang === 'es' ? 'Plan personalizado' : 'Personalized plan'}</li>
-                  <li>• {lang === 'es' ? 'Seguimiento continuo' : 'Continuous follow-up'}</li>
+                  <li>• {lang === 'es' ? 'Un servicio 1:1 que se adapta completamente a las necesidades, metas y desafíos del cliente. Ideal si buscás un enfoque flexible y directo.' : 'A 1:1 service that adapts completely to the needs, goals and challenges of the client. Ideal if you are looking for a flexible and direct approach.'}</li>
+                  <li>• {lang === 'es' ? 'Algunos temas pueden ser por ejemplo, el balance entre vida personal y profesional.' : 'Some topics may be, for example, the balance between personal and professional life.'}</li>
                 </ul>
               </div>
               <div>
                 <h4 className="text-lg font-semibold mb-2">
-                  {lang === 'es' ? 'Sesiones Grupales' : 'Group Sessions'}
+                  {lang === 'es' ? 'Programas Integrales' : 'Integral Programs'}
                 </h4>
                 <ul className="space-y-2">
-                  <li>• {lang === 'es' ? 'Talleres temáticos' : 'Thematic workshops'}</li>
-                  <li>• {lang === 'es' ? 'Grupos de crecimiento' : 'Growth groups'}</li>
-                  <li>• {lang === 'es' ? 'Dinámicas grupales' : 'Group dynamics'}</li>
+                  <li>• {lang === 'es' ? 'Un proceso estructurado y continuo que combina objetivos a largo plazo con seguimiento cercano. Te brindo herramientas y conocimientos de coaching para que puedas fundar los cimientos de tu negocio en una cultura flexible, escalable y orientada a las personas.' : 'A structured and continuous process that combines long-term goals with close follow-up. I provide coaching tools and knowledge so you can lay the foundations of your business in a flexible, scalable and people-oriented culture.'}</li>
                 </ul>
               </div>
             </div>

@@ -8,8 +8,8 @@ export default function LanguageSelector({ lang }: { lang: string }) {
 
   const handleLanguageChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const newLang = e.target.value
-    const newPathname = pathname.replace(`/${lang}`, `/${newLang}`)
-    router.push(newPathname)
+    const newPathname = pathname.replace(/^\/[^\/]+/, `/${newLang}`)
+    window.location.href = newPathname // Force full reload for correct <html lang>
   }
 
   return (
