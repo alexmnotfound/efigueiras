@@ -9,7 +9,7 @@ export default function MobileNav({ lang }: { lang: string }) {
     { href: `/${lang}#about`, label: lang === 'es' ? 'Sobre Mí' : 'About Me' },
     { href: `/${lang}#coaching`, label: lang === 'es' ? 'Sobre Coaching' : 'About Coaching' },
     { href: `/${lang}#proposal`, label: lang === 'es' ? 'Mi Propuesta' : 'My Proposal' },
-    { href: `/${lang}#contact`, label: lang === 'es' ? 'Contacto' : 'Contact' },
+    { href: `/${lang}/contact`, label: lang === 'es' ? 'Contacto' : 'Contact' },
   ];
 
   return (

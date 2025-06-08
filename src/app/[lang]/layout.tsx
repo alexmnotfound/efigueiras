@@ -49,7 +49,7 @@ export default async function RootLayout({
                     <Link href={`/${safeLang}#proposal`} className="text-gray-900 hover:text-primary px-3 py-2 rounded-md text-sm font-medium">
                       {safeLang === 'es' ? 'Mi Propuesta' : 'My Proposal'}
                     </Link>
-                    <Link href={`/${safeLang}#contact`} className="text-gray-900 hover:text-primary px-3 py-2 rounded-md text-sm font-medium">
+                    <Link href={`/${safeLang}/contact`} className="text-gray-900 hover:text-primary px-3 py-2 rounded-md text-sm font-medium">
                       {safeLang === 'es' ? 'Contacto' : 'Contact'}
                     </Link>
                   </div>
