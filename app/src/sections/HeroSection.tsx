@@ -82,12 +82,12 @@ export function HeroSection() {
               href="#contacto"
               className="inline-flex items-center justify-center gap-2 bg-coach-primary text-white text-[15px] font-medium px-8 py-3.5 rounded-full transition-all duration-200 hover:bg-coach-primary-dark hover:scale-[1.03] hover:shadow-[0_8px_24px_rgba(41,73,127,0.3)]"
             >
-              Agenda tu sesión de descubrimiento
+              Agendá tu sesión de descubrimiento
               <ArrowRight size={16} />
             </a>
             <a
               href="#filosofia"
-              className="inline-flex items-center justify-center text-white text-[15px] font-medium px-7 py-3.5 rounded-full border-[1.5px] border-white/50 transition-all duration-200 hover:border-coach-primary hover:text-coach-primary-dark hover:bg-coach-primary/5"
+              className="inline-flex items-center justify-center text-white text-[15px] font-medium px-7 py-3.5 rounded-full border-[1.5px] border-white/50 transition-all duration-200 hover:border-white hover:bg-white/10"
             >
               Conocer más
             </a>

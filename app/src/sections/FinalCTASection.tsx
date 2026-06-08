@@ -34,8 +34,8 @@ export function FinalCTASection() {
 
         <ScrollReveal delay={0.15}>
           <p className="text-lg leading-[1.7] text-white/80 mb-10">
-            Agenda una sesión de descubrimiento gratuita. Sin compromiso, sin
-            obligaciones. Solo una conversacion honesta sobre donde estas y hacia
+            Agendá una sesión de descubrimiento gratuita. Sin compromiso, sin
+            obligaciones. Solo una conversación honesta sobre donde estás y hacia
             donde quieres ir.
           </p>
         </ScrollReveal>
