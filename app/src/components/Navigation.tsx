@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Menu, X } from 'lucide-react';
-import { useScrolled } from '@/hooks/useScrolled';
 
 const navLinks = [
   { label: 'Inicio', href: '#inicio' },
@@ -12,7 +11,6 @@ const navLinks = [
 ];
 
 export function Navigation() {
-  const scrolled = useScrolled(60);
   const [mobileOpen, setMobileOpen] = useState(false);
 
   useEffect(() => {
@@ -33,27 +31,20 @@ export function Navigation() {
   return (
     <>
       <nav
-        className={`fixed top-0 left-0 right-0 z-50 h-[72px] flex items-center transition-all duration-300 ${
-          scrolled
-            ? 'bg-white/95 backdrop-blur-[12px] shadow-[0_2px_20px_rgba(41,73,127,0.08)]'
-            : 'bg-transparent'
-        }`}
+        className="fixed top-0 left-0 right-0 z-50 h-[72px] flex items-center border-b border-white/30"
+        style={{
+          backgroundColor: 'rgba(255,255,255,0.55)',
+          backdropFilter: 'blur(20px)',
+          WebkitBackdropFilter: 'blur(20px)',
+        }}
       >
         <div className="w-full max-w-[1200px] mx-auto px-6 md:px-12 lg:px-16 flex items-center justify-between">
           {/* Logo */}
           <a href="#inicio" className="flex flex-col">
-            <span
-              className={`text-lg font-semibold transition-colors duration-300 ${
-                scrolled ? 'text-coach-primary' : 'text-white'
-              }`}
-            >
+            <span className="text-lg font-semibold text-coach-primary">
               Coach Ontologico
             </span>
-            <span
-              className={`text-xs font-normal transition-colors duration-300 ${
-                scrolled ? 'text-coach-text-light' : 'text-white/70'
-              }`}
-            >
+            <span className="text-xs font-normal text-coach-text-light">
               Transforma tu manera de ser
             </span>
           </a>
@@ -64,9 +55,7 @@ export function Navigation() {
               <a
                 key={link.href}
                 href={link.href}
-                className={`text-[15px] font-medium tracking-[0.02em] transition-colors duration-200 hover:text-coach-accent ${
-                  scrolled ? 'text-coach-primary' : 'text-white'
-                }`}
+                className="text-[15px] font-medium tracking-[0.02em] text-coach-primary transition-colors duration-200 hover:text-coach-accent"
               >
                 {link.label}
               </a>
@@ -84,9 +73,7 @@ export function Navigation() {
           {/* Mobile Hamburger */}
           <button
             onClick={() => setMobileOpen(true)}
-            className={`md:hidden p-2 transition-colors duration-300 ${
-              scrolled ? 'text-coach-primary' : 'text-white'
-            }`}
+            className="md:hidden p-2 text-coach-primary"
             aria-label="Open menu"
           >
             <Menu size={24} />
