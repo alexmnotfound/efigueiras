@@ -5,40 +5,46 @@ import { ScrollReveal } from '@/components/ScrollReveal';
 
 const testimonials = [
   {
-    quote: 'Antes vivia atrapado en mi autocrítica. Cada error en competición me destrozaba durante dias. El coaching me dio herramientas para relaciónarme diferente con la presión. Ahora compito con libertad.',
+    quote: 'Antes vivía atrapado en mi autocrítica. Cada error en competición me destrozaba durante días. El coaching me dio herramientas para relacionarme diferente con la presión. Ahora compito con libertad.',
     name: 'Carlos Martinez',
     role: 'Tenista profesional',
     tag: 'Deportivo',
+    avatar: 'https://i.pravatar.cc/80?img=12',
   },
   {
-    quote: 'Liderar un equipo de 40 personas me generaba ansiedad constante. Aprendi que el problema no era mi equipo, era mi manera de observar el liderazgo. Mi relación con el trabajo cambio por completo.',
+    quote: 'Liderar un equipo de 40 personas me generaba ansiedad constante. Aprendí que el problema no era mi equipo, era mi manera de observar el liderazgo. Mi relación con el trabajo cambió por completo.',
     name: 'Ana Beltran',
     role: 'Directora de Operaciones',
     tag: 'Profesional',
+    avatar: 'https://i.pravatar.cc/80?img=47',
   },
   {
-    quote: 'Como entrenador, sabia mucho de táctica pero no gestiónaba las emociones de mis jugadores ni las mias. Este proceso me transformo como lider y como persona.',
+    quote: 'Como entrenador, sabía mucho de táctica pero no gestionaba las emociones de mis jugadores ni las mías. Este proceso me transformó como líder y como persona.',
     name: 'Miguel Sanchez',
-    role: 'Entrenador de futbol base',
+    role: 'Entrenador de fútbol base',
     tag: 'Deportivo',
+    avatar: 'https://i.pravatar.cc/80?img=33',
   },
   {
     quote: 'Encontré un espacio para cuestionarme cosas que siempre di por sentadas. Fue un proceso exigente y transformador a la vez.',
     name: 'Laura Gomez',
     role: 'Emprendedora',
     tag: 'Profesional',
+    avatar: 'https://i.pravatar.cc/80?img=21',
   },
   {
     quote: 'Tenía miedo de las conversaciones difíciles con mi equipo. Hoy las enfrento con otra presencia y los resultados hablan solos.',
     name: 'Diego Peralta',
     role: 'Gerente Comercial',
     tag: 'Liderazgo',
+    avatar: 'https://i.pravatar.cc/80?img=57',
   },
   {
-    quote: 'Volví a conectar con lo que realmente me mueve. Fue mas que coaching, fue un punto de inflexión en mi vida.',
+    quote: 'Volví a conectar con lo que realmente me mueve. Fue más que coaching, fue un punto de inflexión en mi vida.',
     name: 'Valeria Torres',
     role: 'Atleta amateur',
     tag: 'Deportivo',
+    avatar: 'https://i.pravatar.cc/80?img=44',
   },
 ];
 
@@ -46,15 +52,16 @@ const firstColumn = testimonials.slice(0, 3);
 const secondColumn = testimonials.slice(3, 6);
 const thirdColumn = testimonials.slice(0, 3);
 
-function TestimonialCard({ quote, name, role, tag }: typeof testimonials[0]) {
-  const initials = name.split(' ').map(w => w[0]).join('').slice(0, 2);
+function TestimonialCard({ quote, name, role, tag, avatar }: typeof testimonials[0]) {
   return (
     <div className="p-8 rounded-[10px] border border-gray-100 shadow-card max-w-xs w-full bg-white border-t-[3px] border-t-coach-primary">
       <p className="text-coach-primary/80 text-sm leading-relaxed italic">&ldquo;{quote}&rdquo;</p>
       <div className="flex items-center gap-3 mt-5">
-        <div className="h-10 w-10 rounded-full bg-coach-primary/10 flex items-center justify-center flex-shrink-0">
-          <span className="text-xs font-semibold text-coach-primary">{initials}</span>
-        </div>
+        <img
+          src={avatar}
+          alt={name}
+          className="h-10 w-10 rounded-full object-cover flex-shrink-0"
+        />
         <div className="flex flex-col min-w-0">
           <span className="font-semibold text-coach-primary text-sm truncate">{name}</span>
           <span className="text-coach-text-light text-xs truncate">{role}</span>
@@ -98,7 +105,7 @@ export function TestimonialsSection() {
         <ScrollReveal centered className="text-center mb-16">
           <SectionLabel text="TESTIMONIOS" centered />
           <h2 className="text-[26px] md:text-[30px] lg:text-[36px] font-semibold leading-[1.2] tracking-[-0.01em] text-coach-primary">
-            Historias de transformacion
+            Historias de transformación
           </h2>
         </ScrollReveal>
       </div>
