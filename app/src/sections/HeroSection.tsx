@@ -54,7 +54,7 @@ export function HeroSection() {
             transition={{ duration: 0.8, delay: 0.5, ease: defaultEasing }}
             className="text-4xl md:text-5xl lg:text-[64px] font-semibold leading-[1.08] tracking-[-0.02em] text-white mb-6"
           >
-            Transforma tu manera de{' '}
+            Transformá tu manera de{' '}
             <span className="text-coach-primary">ser</span> para transformar tus
             resultados
           </motion.h1>
