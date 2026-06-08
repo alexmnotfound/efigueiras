@@ -1,10 +1,9 @@
 import { Phone, Mail, MapPin } from 'lucide-react';
 
 const quickLinks = [
-  { label: 'Inicio', href: '#inicio' },
   { label: 'Filosofía', href: '#filosofia' },
   { label: 'Servicios', href: '#servicios' },
-  { label: 'Testimonios', href: '#testimonios' },
+  { label: 'Historias', href: '#testimonios' },
   { label: 'Contacto', href: '#contacto' },
 ];
 
@@ -16,19 +15,19 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
           {/* Brand */}
           <div>
-            <h3 className="text-xl font-semibold text-white mb-2">Coach Ontológico</h3>
+            <h3 className="text-xl font-semibold text-white mb-2">Estefania Figueiras</h3>
             <p className="text-sm text-white/60 mb-4">
-              Coaching ontológico para deportistas y profesionales
+              Coaching Ontológico para deportistas y profesionales
             </p>
             <p className="text-sm text-white/40">
-              Transforma tu manera de ser para transformar tus resultados.
+              Transformá tu manera de ser para transformar tus resultados.
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
             <h4 className="text-sm font-semibold text-white/90 uppercase tracking-wider mb-4">
-              Navegación
+              Menú
             </h4>
             <ul className="space-y-3">
               {quickLinks.map((link) => (
@@ -53,15 +52,15 @@ export function Footer() {
             <ul className="space-y-3">
               <li className="flex items-center gap-3 text-white/70">
                 <Phone size={16} className="text-coach-primary shrink-0" />
-                <span className="text-[15px]">+34 600 000 000</span>
+                <span className="text-[15px]">+54 9 11 6292-2618</span>
               </li>
               <li className="flex items-center gap-3 text-white/70">
                 <Mail size={16} className="text-coach-primary shrink-0" />
-                <span className="text-[15px]">hola@coachontológico.es</span>
+                <span className="text-[15px]">hola@estefaniafigueiras.com</span>
               </li>
               <li className="flex items-center gap-3 text-white/70">
                 <MapPin size={16} className="text-coach-primary shrink-0" />
-                <span className="text-[15px]">Madrid, España</span>
+                <span className="text-[15px]">Buenos Aires, Argentina</span>
               </li>
             </ul>
           </div>
@@ -70,7 +69,7 @@ export function Footer() {
         {/* Bottom band - Copyright */}
         <div className="mt-12 pt-8 border-t border-white/10 text-center">
           <p className="text-[13px] text-white/40">
-            &copy; 2025 Coach Ontológico. Todos los derechos reservados.
+            &copy; 2026 Estefania Figueiras. Todos los derechos reservados.
           </p>
         </div>
       </div>

@@ -42,7 +42,7 @@ export function FinalCTASection() {
 
         <ScrollReveal delay={0.3}>
           <a
-            href="mailto:hola@coachontológico.es"
+            href="https://wa.me/5491162922618?text=Hola%20Estefi%2C%20me%20gustar%C3%ADa%20agendar%20una%20sesi%C3%B3n%20de%20descubrimiento%20%3A%29" target="_blank" rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-coach-primary text-white text-base font-semibold px-10 py-4 rounded-full transition-all duration-200 hover:bg-coach-primary-dark hover:scale-[1.04] hover:shadow-[0_12px_32px_rgba(41,73,127,0.35)]"
           >
             Agendar sesión gratuita

@@ -79,7 +79,7 @@ export function HeroSection() {
             className="flex flex-col sm:flex-row gap-4 mb-5"
           >
             <a
-              href="#contacto"
+              href="https://wa.me/5491162922618?text=Hola%20Estefi%2C%20me%20gustar%C3%ADa%20agendar%20una%20sesi%C3%B3n%20de%20descubrimiento%20%3A%29" target="_blank" rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 bg-coach-primary text-white text-[15px] font-medium px-8 py-3.5 rounded-full transition-all duration-200 hover:bg-coach-primary-dark hover:scale-[1.03] hover:shadow-[0_8px_24px_rgba(41,73,127,0.3)]"
             >
               Agendá tu sesión de descubrimiento

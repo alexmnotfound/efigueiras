@@ -4,10 +4,9 @@ import { Menu, X } from 'lucide-react';
 import { useScrolled } from '@/hooks/useScrolled';
 
 const navLinks = [
-  { label: 'Inicio', href: '#inicio' },
   { label: 'Filosofía', href: '#filosofia' },
   { label: 'Servicios', href: '#servicios' },
-  { label: 'Testimonios', href: '#testimonios' },
+  { label: 'Historias', href: '#testimonios' },
   { label: 'Contacto', href: '#contacto' },
 ];
 
@@ -66,10 +65,10 @@ export function Navigation() {
 
           {/* Desktop CTA */}
           <a
-            href="#contacto"
+            href="https://wa.me/5491162922618?text=Hola%20Estefi%2C%20me%20gustar%C3%ADa%20agendar%20una%20sesi%C3%B3n%20de%20descubrimiento%20%3A%29" target="_blank" rel="noopener noreferrer"
             className="hidden md:inline-flex items-center bg-coach-primary text-white text-[15px] font-medium px-6 py-2.5 rounded-full transition-all duration-200 hover:bg-coach-primary-dark hover:scale-[1.03]"
           >
-            Agenda tu sesión
+            Agendá tu sesión
           </a>
 
           {/* Mobile Hamburger */}
@@ -117,14 +116,14 @@ export function Navigation() {
               ))}
 
               <motion.a
-                href="#contacto"
+                href="https://wa.me/5491162922618?text=Hola%20Estefi%2C%20me%20gustar%C3%ADa%20agendar%20una%20sesi%C3%B3n%20de%20descubrimiento%20%3A%29" target="_blank" rel="noopener noreferrer"
                 onClick={handleLinkClick}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.08 * navLinks.length, duration: 0.4 }}
                 className="mt-4 bg-coach-primary text-white text-lg font-medium px-8 py-3 rounded-full"
               >
-                Agenda tu sesión
+                Agendá tu sesión
               </motion.a>
             </div>
           </motion.div>

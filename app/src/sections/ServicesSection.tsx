@@ -132,7 +132,7 @@ export function ServicesSection() {
                   {/* CTA */}
                   <div className="mt-auto">
                     <a
-                      href="#contacto"
+                      href="https://wa.me/5491162922618?text=Hola%20Estefi%2C%20me%20gustar%C3%ADa%20agendar%20una%20sesi%C3%B3n%20de%20descubrimiento%20%3A%29" target="_blank" rel="noopener noreferrer"
                       className="inline-flex items-center gap-2 text-coach-primary text-[15px] font-medium group relative"
                     >
                       Quiero saber más
