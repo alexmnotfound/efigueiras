@@ -30,7 +30,7 @@ export function HeroSection() {
         className="absolute inset-0 z-[1]"
         style={{
           background:
-            'linear-gradient(135deg, rgba(30, 58, 106, 0.65) 0%, rgba(41, 73, 127, 0.55) 50%, rgba(30, 58, 106, 0.62) 100%)',
+            'linear-gradient(135deg, rgba(30, 30, 30, 0.65) 0%, rgba(50, 50, 50, 0.55) 50%, rgba(30, 30, 30, 0.62) 100%)',
         }}
       />
 
@@ -44,7 +44,7 @@ export function HeroSection() {
             transition={{ duration: 0.6, delay: 0.3, ease: defaultEasing }}
             className="inline-block text-[13px] font-semibold leading-[1.4] tracking-[0.12em] uppercase text-white/70 mb-6"
           >
-            COACHING ONTOLOGICO PROFESIONAL
+            COACHING ONTOLÓGICO PROFESIONAL
           </motion.span>
 
           {/* Headline */}
@@ -55,7 +55,7 @@ export function HeroSection() {
             className="text-4xl md:text-5xl lg:text-[64px] font-semibold leading-[1.08] tracking-[-0.02em] text-white mb-6"
           >
             Transforma tu manera de{' '}
-            <span className="text-coach-accent">ser</span> para transformar tus
+            <span className="text-coach-primary">ser</span> para transformar tus
             resultados
           </motion.h1>
 
@@ -80,14 +80,14 @@ export function HeroSection() {
           >
             <a
               href="#contacto"
-              className="inline-flex items-center justify-center gap-2 bg-coach-accent text-white text-[15px] font-medium px-8 py-3.5 rounded-full transition-all duration-200 hover:bg-coach-accent-hover hover:scale-[1.03] hover:shadow-[0_8px_24px_rgba(196,114,74,0.3)]"
+              className="inline-flex items-center justify-center gap-2 bg-coach-primary text-white text-[15px] font-medium px-8 py-3.5 rounded-full transition-all duration-200 hover:bg-coach-primary-dark hover:scale-[1.03] hover:shadow-[0_8px_24px_rgba(41,73,127,0.3)]"
             >
               Agenda tu sesión de descubrimiento
               <ArrowRight size={16} />
             </a>
             <a
               href="#filosofia"
-              className="inline-flex items-center justify-center text-white text-[15px] font-medium px-7 py-3.5 rounded-full border-[1.5px] border-white/50 transition-all duration-200 hover:border-coach-accent hover:text-coach-accent hover:bg-coach-accent/5"
+              className="inline-flex items-center justify-center text-white text-[15px] font-medium px-7 py-3.5 rounded-full border-[1.5px] border-white/50 transition-all duration-200 hover:border-coach-primary hover:text-coach-primary-dark hover:bg-coach-primary/5"
             >
               Conocer más
             </a>

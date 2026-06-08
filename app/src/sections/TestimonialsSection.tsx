@@ -5,37 +5,37 @@ import { ScrollReveal } from '@/components/ScrollReveal';
 
 const testimonials = [
   {
-    quote: 'Antes vivia atrapado en mi autocritica. Cada error en competicion me destrozaba durante dias. El coaching me dio herramientas para relacionarme diferente con la presion. Ahora compito con libertad.',
+    quote: 'Antes vivia atrapado en mi autocrítica. Cada error en competición me destrozaba durante dias. El coaching me dio herramientas para relaciónarme diferente con la presión. Ahora compito con libertad.',
     name: 'Carlos Martinez',
     role: 'Tenista profesional',
     tag: 'Deportivo',
   },
   {
-    quote: 'Liderar un equipo de 40 personas me generaba ansiedad constante. Aprendi que el problema no era mi equipo, era mi manera de observar el liderazgo. Mi relacion con el trabajo cambio por completo.',
+    quote: 'Liderar un equipo de 40 personas me generaba ansiedad constante. Aprendi que el problema no era mi equipo, era mi manera de observar el liderazgo. Mi relación con el trabajo cambio por completo.',
     name: 'Ana Beltran',
     role: 'Directora de Operaciones',
     tag: 'Profesional',
   },
   {
-    quote: 'Como entrenador, sabia mucho de tactica pero no gestionaba las emociones de mis jugadores ni las mias. Este proceso me transformo como lider y como persona.',
+    quote: 'Como entrenador, sabia mucho de táctica pero no gestiónaba las emociones de mis jugadores ni las mias. Este proceso me transformo como lider y como persona.',
     name: 'Miguel Sanchez',
     role: 'Entrenador de futbol base',
     tag: 'Deportivo',
   },
   {
-    quote: 'Encontre un espacio para cuestionarme cosas que siempre di por sentadas. Fue un proceso exigente y transformador a la vez.',
+    quote: 'Encontré un espacio para cuestionarme cosas que siempre di por sentadas. Fue un proceso exigente y transformador a la vez.',
     name: 'Laura Gomez',
     role: 'Emprendedora',
     tag: 'Profesional',
   },
   {
-    quote: 'Tenia miedo de las conversaciones dificiles con mi equipo. Hoy las enfrento con otra presencia y los resultados hablan solos.',
+    quote: 'Tenía miedo de las conversaciones difíciles con mi equipo. Hoy las enfrento con otra presencia y los resultados hablan solos.',
     name: 'Diego Peralta',
     role: 'Gerente Comercial',
     tag: 'Liderazgo',
   },
   {
-    quote: 'Volvi a conectar con lo que realmente me mueve. Fue mas que coaching, fue un punto de inflexion en mi vida.',
+    quote: 'Volví a conectar con lo que realmente me mueve. Fue mas que coaching, fue un punto de inflexión en mi vida.',
     name: 'Valeria Torres',
     role: 'Atleta amateur',
     tag: 'Deportivo',
@@ -49,7 +49,7 @@ const thirdColumn = testimonials.slice(0, 3);
 function TestimonialCard({ quote, name, role, tag }: typeof testimonials[0]) {
   const initials = name.split(' ').map(w => w[0]).join('').slice(0, 2);
   return (
-    <div className="p-8 rounded-[10px] border border-gray-100 shadow-card max-w-xs w-full bg-white border-t-[3px] border-t-coach-accent">
+    <div className="p-8 rounded-[10px] border border-gray-100 shadow-card max-w-xs w-full bg-white border-t-[3px] border-t-coach-primary">
       <p className="text-coach-primary/80 text-sm leading-relaxed italic">&ldquo;{quote}&rdquo;</p>
       <div className="flex items-center gap-3 mt-5">
         <div className="h-10 w-10 rounded-full bg-coach-primary/10 flex items-center justify-center flex-shrink-0">

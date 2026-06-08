@@ -57,7 +57,7 @@ export function Navigation() {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-[15px] font-medium tracking-[0.02em] text-coach-primary transition-colors duration-200 hover:text-coach-accent"
+                className="text-[15px] font-medium tracking-[0.02em] text-coach-primary transition-colors duration-200 hover:text-coach-primary-dark"
               >
                 {link.label}
               </a>
@@ -67,9 +67,9 @@ export function Navigation() {
           {/* Desktop CTA */}
           <a
             href="#contacto"
-            className="hidden md:inline-flex items-center bg-coach-accent text-white text-[15px] font-medium px-6 py-2.5 rounded-full transition-all duration-200 hover:bg-coach-accent-hover hover:scale-[1.03]"
+            className="hidden md:inline-flex items-center bg-coach-primary text-white text-[15px] font-medium px-6 py-2.5 rounded-full transition-all duration-200 hover:bg-coach-primary-dark hover:scale-[1.03]"
           >
-            Agenda tu sesion
+            Agenda tu sesión
           </a>
 
           {/* Mobile Hamburger */}
@@ -110,7 +110,7 @@ export function Navigation() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.08 * i, duration: 0.4, ease: [0.25, 0.1, 0.25, 1] }}
-                  className="text-2xl font-medium text-white hover:text-coach-accent transition-colors duration-200"
+                  className="text-2xl font-medium text-white hover:text-coach-primary-dark transition-colors duration-200"
                 >
                   {link.label}
                 </motion.a>
@@ -122,9 +122,9 @@ export function Navigation() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.08 * navLinks.length, duration: 0.4 }}
-                className="mt-4 bg-coach-accent text-white text-lg font-medium px-8 py-3 rounded-full"
+                className="mt-4 bg-coach-primary text-white text-lg font-medium px-8 py-3 rounded-full"
               >
-                Agenda tu sesion
+                Agenda tu sesión
               </motion.a>
             </div>
           </motion.div>

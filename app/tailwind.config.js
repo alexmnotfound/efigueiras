@@ -11,8 +11,6 @@ module.exports = {
         coach: {
           primary: '#29497f',
           'primary-dark': '#1e3a6a',
-          accent: '#c4724a',
-          'accent-hover': '#a85f3a',
           'bg-light': '#f8f9fb',
           'bg-grey': '#f1f4f8',
           'text-muted': '#555555',

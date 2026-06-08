@@ -2,7 +2,7 @@ import { Phone, Mail, MapPin } from 'lucide-react';
 
 const quickLinks = [
   { label: 'Inicio', href: '#inicio' },
-  { label: 'Filosofia', href: '#filosofia' },
+  { label: 'Filosofía', href: '#filosofia' },
   { label: 'Servicios', href: '#servicios' },
   { label: 'Testimonios', href: '#testimonios' },
   { label: 'Contacto', href: '#contacto' },
@@ -16,9 +16,9 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
           {/* Brand */}
           <div>
-            <h3 className="text-xl font-semibold text-white mb-2">Coach Ontologico</h3>
+            <h3 className="text-xl font-semibold text-white mb-2">Coach Ontológico</h3>
             <p className="text-sm text-white/60 mb-4">
-              Coaching ontologico para deportistas y profesionales
+              Coaching ontológico para deportistas y profesionales
             </p>
             <p className="text-sm text-white/40">
               Transforma tu manera de ser para transformar tus resultados.
@@ -28,7 +28,7 @@ export function Footer() {
           {/* Quick Links */}
           <div>
             <h4 className="text-sm font-semibold text-white/90 uppercase tracking-wider mb-4">
-              Navegacion
+              Navegación
             </h4>
             <ul className="space-y-3">
               {quickLinks.map((link) => (
@@ -38,7 +38,7 @@ export function Footer() {
                     className="text-[15px] text-white/70 hover:text-white transition-colors duration-200 relative group"
                   >
                     {link.label}
-                    <span className="absolute left-0 bottom-0 w-0 h-[1px] bg-coach-accent group-hover:w-full transition-all duration-300" />
+                    <span className="absolute left-0 bottom-0 w-0 h-[1px] bg-coach-primary group-hover:w-full transition-all duration-300" />
                   </a>
                 </li>
               ))}
@@ -52,16 +52,16 @@ export function Footer() {
             </h4>
             <ul className="space-y-3">
               <li className="flex items-center gap-3 text-white/70">
-                <Phone size={16} className="text-coach-accent shrink-0" />
+                <Phone size={16} className="text-coach-primary shrink-0" />
                 <span className="text-[15px]">+34 600 000 000</span>
               </li>
               <li className="flex items-center gap-3 text-white/70">
-                <Mail size={16} className="text-coach-accent shrink-0" />
-                <span className="text-[15px]">hola@coachontologico.es</span>
+                <Mail size={16} className="text-coach-primary shrink-0" />
+                <span className="text-[15px]">hola@coachontológico.es</span>
               </li>
               <li className="flex items-center gap-3 text-white/70">
-                <MapPin size={16} className="text-coach-accent shrink-0" />
-                <span className="text-[15px]">Madrid, Espana</span>
+                <MapPin size={16} className="text-coach-primary shrink-0" />
+                <span className="text-[15px]">Madrid, España</span>
               </li>
             </ul>
           </div>
@@ -70,7 +70,7 @@ export function Footer() {
         {/* Bottom band - Copyright */}
         <div className="mt-12 pt-8 border-t border-white/10 text-center">
           <p className="text-[13px] text-white/40">
-            &copy; 2025 Coach Ontologico. Todos los derechos reservados.
+            &copy; 2025 Coach Ontológico. Todos los derechos reservados.
           </p>
         </div>
       </div>

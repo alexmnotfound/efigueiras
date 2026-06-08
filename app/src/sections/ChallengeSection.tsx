@@ -5,21 +5,21 @@ import { ScrollReveal, ScrollRevealItem } from '@/components/ScrollReveal';
 const challenges = [
   {
     icon: TrendingUp,
-    title: 'Mas esfuerzo, mismos resultados',
+    title: 'Más esfuerzo, mismos resultados',
     description:
-      'Entrenas mas horas. Trabajas mas duro. Pero los resultados no llegan. El esfuerzo desenfrenado sin un cambio en tu manera de ser produce agotamiento, no excelencia.',
+      'Entrenás más horas. Trabajás más duro. Pero los resultados no llegan. El esfuerzo desenfrenado sin un cambio en tu manera de ser produce agotamiento, no excelencia.',
   },
   {
     icon: Brain,
     title: 'Tu mente te sabotea',
     description:
-      'En los momentos clave, aparecen los pensamientos limitantes. El miedo al fracaso, la autocritica destructiva, la comparacion constante. Tu lenguaje interno se convierte en tu mayor obstaculo.',
+      'En los momentos clave, aparecen los pensamientos limitantes. El miedo al fracaso, la autocrítica destructiva, la comparación constante. Tu lenguaje interno se convierte en tu mayor obstáculo.',
   },
   {
     icon: Heart,
     title: 'Las emociones te dominan',
     description:
-      'La frustracion, la ansiedad pre-competitiva, el bloqueo bajo presion. Cuando no integras emociones y corporalidad, tu rendimiento se ve secuestrado por estados que no eliges.',
+      'La frustración, la ansiedad pre-competitiva, el bloqueo bajo presión. Cuando no integrás emociones y corporalidad, tu rendimiento se ve secuestrado por estados que no elegís.',
   },
 ];
 
@@ -29,9 +29,9 @@ export function ChallengeSection() {
       <div className="max-w-[1200px] mx-auto px-6 md:px-12 lg:px-16">
         {/* Header */}
         <ScrollReveal centered className="text-center">
-          <SectionLabel text="EL DESAFIO" centered />
+          <SectionLabel text="EL DESAFÍO" centered />
           <h2 className="text-3xl md:text-[48px] font-semibold leading-[1.12] tracking-[-0.015em] text-coach-primary max-w-[700px] mx-auto mb-16">
-            &iquest;Intentas cambiar tus resultados solo desde la accion&quest;
+          ¿Intentás cambiar tus resultados solo desde la acción?
           </h2>
         </ScrollReveal>
 

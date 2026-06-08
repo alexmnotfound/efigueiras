@@ -8,30 +8,30 @@ const services = [
     image: '/images/service-sports.jpg',
     icon: Trophy,
     title: 'Coaching para Deportistas',
-    subtitle: 'RENDIMIENTO BAJO PRESION &middot; MENTALIDAD DE CAMPEON',
+    subtitle: 'RENDIMIENTO BAJO PRESIÓN &middot; MENTALIDAD DE CAMPEÓN',
     description:
-      'Procesos de coaching ontologico orientados a deportistas de alto rendimiento que buscan superar bloqueos mentales, gestionar la presion competitiva y desarrollar una mentalidad solida y flexible.',
+      'Procesos de coaching ontológico orientados a deportistas de alto rendimiento que buscan superar bloqueos mentales, gestiónar la presión competitiva y desarrollar una mentalidad sólida y flexible.',
     features: [
-      'Gestion de emociones pre-competitivas',
-      'Superacion de bloqueos y miedos',
-      'Construccion de liderazgo en equipo',
-      'Comunicacion efectiva con cuerpo tecnico',
-      'Redefinicion de la relacion con el rendimiento',
+      'Gestión de emociones pre-competitivas',
+      'Superación de bloqueos y miedos',
+      'Construcción de liderazgo en equipo',
+      'Comunicación efectiva con cuerpo técnico',
+      'Redefinicion de la relación con el rendimiento',
     ],
   },
   {
     image: '/images/service-pro.jpg',
     icon: Briefcase,
     title: 'Coaching para Profesionales',
-    subtitle: 'LIDERAZGO &middot; COMUNICACION &middot; GESTION DEL CAMBIO',
+    subtitle: 'LIDERAZGO &middot; COMUNICACIÓN &middot; GESTIÓN DEL CAMBIO',
     description:
-      'Acompanamiento para lideres, ejecutivos y equipos que quieren transformar su impacto profesional desarrollando nuevas competencias en lenguaje, emociones y presencia corporal.',
+      'Acompañamiento para líderes, ejecutivos y equipos que quieren transformar su impacto profesional desarrollando nuevas competencias en lenguaje, emociones y presencia corporal.',
     features: [
-      'Desarrollo del liderazgo ontologico',
-      'Gestion de conversaciones dificiles',
-      'Construccion de equipos de alto rendimiento',
-      'Manejo del estres y la incertidumbre',
-      'Diseno de proyectos y acciones efectivas',
+      'Desarrollo del liderazgo ontológico',
+      'Gestión de conversaciones difíciles',
+      'Construcción de equipos de alto rendimiento',
+      'Manejo del estrés y la incertidumbre',
+      'Diseño de proyectos y acciónes efectivas',
     ],
   },
 ];
@@ -44,7 +44,7 @@ export function ServicesSection() {
         <ScrollReveal centered className="text-center mb-16">
           <SectionLabel text="SERVICIOS" centered />
           <h2 className="text-[26px] md:text-[30px] lg:text-[36px] font-semibold leading-[1.2] tracking-[-0.01em] text-coach-primary mb-4">
-            Acompanamiento disenado para tu contexto
+            Acompañamiento diseñado para tu contexto
           </h2>
           <p className="text-lg leading-[1.7] text-coach-text-muted max-w-[560px] mx-auto">
             Procesos personalizados que se adaptan a tus objetivos, ya seas
@@ -78,10 +78,10 @@ export function ServicesSection() {
                 {/* Content */}
                 <div className="p-10 flex-1 flex flex-col">
                   {/* Icon */}
-                  <div className="w-14 h-14 rounded-full bg-coach-accent/10 flex items-center justify-center mb-5">
+                  <div className="w-14 h-14 rounded-full bg-coach-primary/10 flex items-center justify-center mb-5">
                     <service.icon
                       size={32}
-                      className="text-coach-accent"
+                      className="text-coach-primary"
                       strokeWidth={1.5}
                     />
                   </div>
@@ -119,7 +119,7 @@ export function ServicesSection() {
                       >
                         <Check
                           size={16}
-                          className="text-coach-accent shrink-0 mt-0.5"
+                          className="text-coach-primary shrink-0 mt-0.5"
                           strokeWidth={2.5}
                         />
                         <span className="text-sm text-coach-text-muted">
@@ -133,14 +133,14 @@ export function ServicesSection() {
                   <div className="mt-auto">
                     <a
                       href="#contacto"
-                      className="inline-flex items-center gap-2 text-coach-accent text-[15px] font-medium group relative"
+                      className="inline-flex items-center gap-2 text-coach-primary text-[15px] font-medium group relative"
                     >
-                      Quiero saber mas
+                      Quiero saber más
                       <ArrowRight
                         size={16}
                         className="transition-transform duration-200 group-hover:translate-x-1"
                       />
-                      <span className="absolute left-0 bottom-0 w-0 h-[1.5px] bg-coach-accent group-hover:w-full transition-all duration-300" />
+                      <span className="absolute left-0 bottom-0 w-0 h-[1.5px] bg-coach-primary group-hover:w-full transition-all duration-300" />
                     </a>
                   </div>
                 </div>
