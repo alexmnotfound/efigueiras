@@ -19,8 +19,9 @@ export function HeroSection() {
       >
         <img
           src="/images/hero-bg.jpg"
-          alt="Atleta en momento de contemplacion"
+          alt="Atleta en momento de contemplación"
           className="w-full h-full object-cover"
+          style={{ transform: 'scaleX(-1)' }}
         />
       </motion.div>
 
@@ -29,7 +30,7 @@ export function HeroSection() {
         className="absolute inset-0 z-[1]"
         style={{
           background:
-            'linear-gradient(135deg, rgba(30, 58, 106, 0.88) 0%, rgba(41, 73, 127, 0.78) 50%, rgba(30, 58, 106, 0.85) 100%)',
+            'linear-gradient(135deg, rgba(30, 58, 106, 0.65) 0%, rgba(41, 73, 127, 0.55) 50%, rgba(30, 58, 106, 0.62) 100%)',
         }}
       />
 
@@ -65,9 +66,9 @@ export function HeroSection() {
             transition={{ duration: 0.7, delay: 0.7, ease: defaultEasing }}
             className="text-lg leading-[1.7] text-white/85 max-w-[520px] mb-9"
           >
-            Acompano procesos profundos de cambio en el mundo del deporte y la
+            Acompaño procesos profundos de cambio en el mundo del deporte y la
             empresa, trabajando sobre el lenguaje, las emociones y la
-            corporalidad para generar nuevas posibilidades de accion y liderazgo.
+            corporalidad para generar nuevas posibilidades de acción y liderazgo.
           </motion.p>
 
           {/* CTA Group */}
@@ -81,14 +82,14 @@ export function HeroSection() {
               href="#contacto"
               className="inline-flex items-center justify-center gap-2 bg-coach-accent text-white text-[15px] font-medium px-8 py-3.5 rounded-full transition-all duration-200 hover:bg-coach-accent-hover hover:scale-[1.03] hover:shadow-[0_8px_24px_rgba(196,114,74,0.3)]"
             >
-              Agenda tu sesion de descubrimiento
+              Agenda tu sesión de descubrimiento
               <ArrowRight size={16} />
             </a>
             <a
               href="#filosofia"
               className="inline-flex items-center justify-center text-white text-[15px] font-medium px-7 py-3.5 rounded-full border-[1.5px] border-white/50 transition-all duration-200 hover:border-coach-accent hover:text-coach-accent hover:bg-coach-accent/5"
             >
-              Conocer mas
+              Conocer más
             </a>
           </motion.div>
 
@@ -99,7 +100,7 @@ export function HeroSection() {
             transition={{ duration: 0.5, delay: 1.1, ease: defaultEasing }}
             className="text-sm text-white/60"
           >
-            Primera sesion gratuita &middot; Sin compromiso
+            Primera sesión gratuita &middot; Sin compromiso
           </motion.p>
         </div>
       </div>

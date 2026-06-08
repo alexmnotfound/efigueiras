@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Menu, X } from 'lucide-react';
+import { useScrolled } from '@/hooks/useScrolled';
 
 const navLinks = [
   { label: 'Inicio', href: '#inicio' },
@@ -11,6 +12,7 @@ const navLinks = [
 ];
 
 export function Navigation() {
+  const scrolled = useScrolled(60);
   const [mobileOpen, setMobileOpen] = useState(false);
 
   useEffect(() => {
@@ -31,21 +33,21 @@ export function Navigation() {
   return (
     <>
       <nav
-        className="fixed top-0 left-0 right-0 z-50 h-[72px] flex items-center border-b border-white/30"
-        style={{
+        className="fixed top-0 left-0 right-0 z-50 h-[72px] flex items-center border-b border-white/30 transition-all duration-300"
+        style={scrolled ? {
           backgroundColor: 'rgba(255,255,255,0.55)',
           backdropFilter: 'blur(20px)',
           WebkitBackdropFilter: 'blur(20px)',
+        } : {
+          backgroundColor: 'rgba(255,255,255,1)',
         }}
       >
         <div className="w-full max-w-[1200px] mx-auto px-6 md:px-12 lg:px-16 flex items-center justify-between">
           {/* Logo */}
-          <a href="#inicio" className="flex flex-col">
-            <span className="text-lg font-semibold text-coach-primary">
-              Coach Ontologico
-            </span>
-            <span className="text-xs font-normal text-coach-text-light">
-              Transforma tu manera de ser
+          <a href="#inicio" className="flex items-center gap-2">
+            <img src="/images/logo.png" alt="Logo" width={36} height={36} className="flex-shrink-0" />
+            <span className="font-bold text-coach-primary text-sm tracking-wide hidden sm:block">
+              ESTEFANÍA FIGUEIRAS
             </span>
           </a>
 
